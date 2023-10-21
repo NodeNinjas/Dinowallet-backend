@@ -5,5 +5,8 @@ const router = express.Router();
 
 router.get("/allaccount", authController.allAccount);
 router.post("/createaccount", authController.createAccount);
+router.get("/hello", (req, res) => {
+    res.send("Hello");
+})
 
 module.exports = router;
